@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			.cube{
+				width:200px;
+				height: 200px;
+				margin: 50px auto;
+				position: relative;
+				/* 因为透视点设置在body,与各个面隔了一层div,所以要设置保留3D效果 */
+				transform-style: preserve-3d;
+				transition: all 8s;
+			}
+			/* .cube:hover{
+				transform: rotate3d(1,1,0,720deg);
+			} */
+			/* :target{
+				transform: rotate3d(1,1,0,720deg);
+			} */
+			.face{
+				width: 200px;
+				height: 200px;
+				position: absolute;
+				left: 0;
+				top: 0;
+				/* 设置透明度 */
+				opacity: 0.8;
+			}
+			.front{
+				background-image: url(img/luoxiaoheizhanji.jpg);
+				background-size: 100% auto;
+				transform: translateZ(100px);
+			}
+			.back{
+				background-image: url(img/agen.jpg);
+				background-size: 100% auto;
+				transform: translateZ(-100px);
+			}
+			.left{
+				background-image: url(img/shanxin.jpg);
+				background-size: 100% auto;
+				/* 旋转后xyz轴跟着变换 */
+				transform: rotateY(-90deg) translateZ(100px) ;
+			}
+			.right{
+				background-image: url(img/xiaobai.jpg);
+				background-size: 100% auto;
+				transform: rotateY(90deg) translateZ(100px) ;
+			}
+			.top{
+				background-image: url(img/xiaohei.jpg);
+				background-size: 100% auto;
+				transform: rotateX(90deg) translateZ(100px) ;
+			}
+			.bottom{
+				background-image: url(img/xiaohei2.jpg);
+				background-size: 100% auto;
+				transform: rotateX(-90deg) translateZ(100px) ;
+			}
+			body{
+				perspective: 1000px;
+			}
+			#xuanzhuan:checked ~div{
+				transform: rotate3d(1,1,0,720deg);
+			}
+			#xuanzhuan1:checked ~div{
+				transform: rotate3d(1,1,0,-720deg);
+			}
+			.lb {
+				display: block;
+				font-size: 50px;
+				font-family: "宋体";
+				font-weight: 75px;
+				color: white;
+				text-align: center;
+				line-height: 100px;
+				margin: 0 auto;
+				/* 利用动画实现闪闪发光的效果 */
+				animation: donghua 1s infinite alternate;
+			}
+			@keyframes donghua{
+				from{
+					text-shadow: 0px 0px 20px yellow, 0px 0px 10px orange, 0px 0px 10px orangered, 0px 0px 5px red;
+				}
+				to{
+					text-shadow: 0px 0px 10px yellow, 0px 0px 5px orange, 0px 0px 5px orangered, 0px 0px 2.5px red;
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<label for="xuanzhuan" class="lb">点击旋转</label>
+		<label for="xuanzhuan1" class="lb">点击旋转</label>
+		<input type="radio" name="xuanzhuan" id="xuanzhuan" hidden="hidden"/>
+		<input type="radio" name="xuanzhuan" id="xuanzhuan1" hidden="hidden"/>
+		<div class="cube">
+			<div class="face front"></div>
+			<div class="face back"></div>
+			<div class="face left"></div>
+			<div class="face right"></div>
+			<div class="face top"></div>
+			<div class="face bottom"></div>
+		</div>
+		
+		
+	</body>
+</html>
