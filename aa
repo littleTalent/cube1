@@ -55,7 +55,7 @@
 				transform: rotateX(90deg) translateZ(100px) ;
 			}
 			.bottom{
-				background-image: url(img/xiaohei2.jpg);
+				background-image: url(img/xiaohei1.jpg);
 				background-size: 100% auto;
 				transform: rotateX(-90deg) translateZ(100px) ;
 			}
