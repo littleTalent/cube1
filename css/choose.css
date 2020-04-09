@@ -40,7 +40,7 @@
 	}
 }
 #front:checked~.cube{
-	transform: rotateY(0deg) rotateZ(360deg);
+	transform: rotateX(0deg) rotateY(0deg) rotateZ(360deg);
 }
 #front:checked~.choose [for="front"]{
 	background: lightskyblue;
@@ -48,7 +48,7 @@
 	box-shadow: 0 0 20px skyblue;
 }
 #back:checked~.cube{
-	transform: rotateY(900deg) rotateZ(-360deg);
+	transform: rotateX(0deg) rotateY(900deg) rotateZ(-360deg);
 }
 #back:checked~.choose [for="back"]{
 	background: lightskyblue;
@@ -56,7 +56,7 @@
 	box-shadow: 0 0 20px skyblue;
 }
 #left:checked~.cube{
-	transform: rotateY(450deg) rotateZ(720deg);
+	transform: rotateX(0deg) rotateY(450deg) rotateZ(720deg);
 }
 #left:checked~.choose [for="left"]{
 	background: lightskyblue;
@@ -64,7 +64,7 @@
 	box-shadow: 0 0 20px skyblue;
 }
 #right:checked~.cube{
-	transform: rotateY(-450deg) rotateZ(-720deg);
+	transform: rotateX(0deg) rotateY(-450deg) rotateZ(-720deg);
 }
 #right:checked~.choose [for="right"]{
 	background: lightskyblue;
@@ -72,7 +72,7 @@
 	box-shadow: 0 0 20px skyblue;
 }
 #top:checked~.cube{
-	transform: rotateX(990deg) rotateZ(1080deg);
+	transform: rotateX(-450deg) rotateY(0deg) rotateZ(-1080deg);
 }
 #top:checked~.choose [for="top"]{
 	background: lightskyblue;
@@ -80,11 +80,10 @@
 	box-shadow: 0 0 20px skyblue;
 }
 #bottom:checked~.cube{
-	transform: rotateX(450deg) rotateZ(-1080deg);
+	transform: rotateX(450deg) rotateY(0deg) rotateZ(1080deg);
 }
 #bottom:checked~.choose [for="bottom"]{
 	background: lightskyblue;
 	font-size: 50px;
 	box-shadow: 0 0 20px skyblue;
 }
-
