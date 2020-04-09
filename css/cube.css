@@ -1,6 +1,4 @@
 html,body{
-	margin-top: 200px;
-	margin-bottom: 100px;
 	perspective: 600px;
 	position: relative;
 }
