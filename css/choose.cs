@@ -19,7 +19,7 @@
 	line-height: 150px;
 	border: 1px solid burlywood;
 	border-radius: 10px;
-	transition: all 1s;
+	transition: all 2s;
 	/* 利用动画实现闪闪发光的效果 */
 	animation: donghua 1s infinite alternate;
 }
