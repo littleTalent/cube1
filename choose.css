@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/cube.css" />
+		<link rel="stylesheet" type="text/css" href="css/choose.css" />
+	</head>
+	<body>
+		<input type="radio" name="facet" id="front" hidden="hidden">
+		<input type="radio" name="facet" id="back" hidden="hidden">
+		<div class="cube">
+			<div class="face front"></div>
+			<div class="face back"></div>
+			<div class="face left"></div>
+			<div class="face right"></div>
+			<div class="face top"></div>
+			<div class="face bottom"></div>
+		</div>
+		<div class="choose">
+			<label for="front" class="facetlb">萱</label>
+			<label for="back" class="facetlb">萱</label>
+		</div>
+	</body>
+</html>
