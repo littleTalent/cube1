@@ -5,15 +5,15 @@ html,body{
 	position: relative;
 }
 .cube {
-	width: 200px;
-	height: 200px;
+	width: 400px;
+	height: 400px;
 	margin: 0px auto;
 	position: absolute;
 	/* 因为透视点设置在该父元素外的body,与各个面隔了一层div,所以要设置保留3D效果 */
 	transform-style: preserve-3d;
-	transition: all 5s;
-	left: calc(50% - 100px);
-	top: calc(50% - 100px);
+	transition: all 10s;
+	left: calc(50% - 200px);
+	top: calc(50% - 200px);
 }
 
 .cube:hover {
@@ -21,8 +21,8 @@ html,body{
 }
 
 .face {
-	width: 200px;
-	height: 200px;
+	width: 400px;
+	height: 400px;
 	position: absolute;
 	left: 0;
 	top: 0;
@@ -33,36 +33,36 @@ html,body{
 .front {
 	background-image: url(../img/luoxiaoheizhanji.jpg);
 	background-size: 100% auto;
-	transform: translateZ(100px);
+	transform: translateZ(200px);
 }
 
 .back {
 	background-image: url(../img/agen.jpg);
 	background-size: 100% auto;
-	transform: translateZ(-100px);
+	transform: translateZ(-200px);
 }
 
 .left {
 	background-image: url(../img/shanxin.jpg);
 	background-size: 100% auto;
 	/* 旋转后xyz轴跟着变换 */
-	transform: rotateY(-90deg) translateZ(100px);
+	transform: rotateY(-90deg) translateZ(200px);
 }
 
 .right {
 	background-image: url(../img/xiaobai.jpg);
 	background-size: 100% auto;
-	transform: rotateY(90deg) translateZ(100px);
+	transform: rotateY(90deg) translateZ(200px);
 }
 
 .top {
 	background-image: url(../img/xiaohei.jpg);
 	background-size: 100% auto;
-	transform: rotateX(90deg) translateZ(100px);
+	transform: rotateX(90deg) translateZ(200px);
 }
 
 .bottom {
 	background-image: url(../img/xiaohei2.jpg);
 	background-size: 100% auto;
-	transform: rotateX(-90deg) translateZ(100px);
+	transform: rotateX(-90deg) translateZ(200px);
 }
