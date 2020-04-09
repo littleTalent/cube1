@@ -32,11 +32,13 @@
 
 @keyframes donghua {
 	from {
+		background: lightskyblue;
 		text-shadow: 0px 0px 36px yellow, 0px 0px 20px orange, 0px 0px 20px orangered, 0px 0px 10px red;
 		box-shadow: 0px 0px 36px yellow, 0px 0px 20px orange, 0px 0px 20px orangered, 0px 0px 10px red;
 	}
 
 	to {
+		background: skyblue;
 		text-shadow: 0px 0px 20px yellow, 0px 0px 10px orange, 0px 0px 10px orangered, 0px 0px 5px red;
 		box-shadow: 0px 0px 20px yellow, 0px 0px 10px orange, 0px 0px 10px orangered, 0px 0px 5px red;
 	}
@@ -45,45 +47,35 @@
 	transform: rotateX(0deg) rotateY(0deg) rotateZ(360deg);
 }
 #front:checked~.choose [for="front"]{
-	background: lightskyblue;
 	font-size: 50px;
-	box-shadow: 0 0 20px skyblue;
 }
 #back:checked~.cube{
 	transform: rotateX(0deg) rotateY(900deg) rotateZ(-360deg);
 }
 #back:checked~.choose [for="back"]{
-	background: lightskyblue;
 	font-size: 50px;
-	box-shadow: 0 0 20px skyblue;
 }
 #left:checked~.cube{
 	transform: rotateX(0deg) rotateY(450deg) rotateZ(720deg);
 }
 #left:checked~.choose [for="left"]{
-	background: lightskyblue;
 	font-size: 50px;
-	box-shadow: 0 0 20px skyblue;
 }
 #right:checked~.cube{
 	transform: rotateX(0deg) rotateY(-450deg) rotateZ(-720deg);
 }
 #right:checked~.choose [for="right"]{
-	background: lightskyblue;
 	font-size: 50px;
-	box-shadow: 0 0 20px skyblue;
 }
 #top:checked~.cube{
 	transform: rotateX(-450deg) rotateY(0deg) rotateZ(-1080deg);
 }
 #top:checked~.choose [for="top"]{
-	background: lightskyblue;
 	font-size: 50px;
 }
 #bottom:checked~.cube{
 	transform: rotateX(450deg) rotateY(0deg) rotateZ(1080deg);
 }
 #bottom:checked~.choose [for="bottom"]{
-	background: lightskyblue;
 	font-size: 50px;
 }
