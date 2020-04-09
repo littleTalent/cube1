@@ -1,6 +1,4 @@
 .choose {
-	width: 300px;
-	height: 100px;
 	margin: 0 auto;
 	text-align: center;
 	position: absolute;
@@ -10,8 +8,8 @@
 
 .facetlb {
 	display: inline-block;
-	width: 120px;
-	height: 60px;
+	width: 200px;
+	height: 150px;
 	margin: 10px;
 	font-size: 0px;
 	font-family: "宋体";
@@ -19,7 +17,7 @@
 	/* 文字水平居中 */
 	text-align: center;
 	/* 文字行高=元素高度,实现文字垂直居中 */
-	line-height: 60px;
+	line-height: 150px;
 	border: 1px solid burlywood;
 	border-radius: 10px;
 	transition: all 1s;
@@ -47,35 +45,35 @@
 	transform: rotateX(0deg) rotateY(0deg) rotateZ(360deg);
 }
 #front:checked~.choose [for="front"]{
-	font-size: 50px;
+	font-size: 100px;
 }
 #back:checked~.cube{
 	transform: rotateX(0deg) rotateY(900deg) rotateZ(-360deg);
 }
 #back:checked~.choose [for="back"]{
-	font-size: 50px;
+	font-size: 100px;
 }
 #left:checked~.cube{
 	transform: rotateX(0deg) rotateY(450deg) rotateZ(720deg);
 }
 #left:checked~.choose [for="left"]{
-	font-size: 50px;
+	font-size: 100px;
 }
 #right:checked~.cube{
 	transform: rotateX(0deg) rotateY(-450deg) rotateZ(-720deg);
 }
 #right:checked~.choose [for="right"]{
-	font-size: 50px;
+	font-size: 100px;
 }
 #top:checked~.cube{
 	transform: rotateX(-450deg) rotateY(0deg) rotateZ(-1080deg);
 }
 #top:checked~.choose [for="top"]{
-	font-size: 50px;
+	font-size: 100px;
 }
 #bottom:checked~.cube{
 	transform: rotateX(450deg) rotateY(0deg) rotateZ(1080deg);
 }
 #bottom:checked~.choose [for="bottom"]{
-	font-size: 50px;
+	font-size: 100px;
 }
